@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34729.46
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7-Tipo-DateTime", "7-Tipo-DateTime\7-Tipo-DateTime.csproj", "{974CEF36-7863-41D5-834A-CD845E450346}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7-Tipo-DateTime-Escritorio", "7-Tipo-DateTime-Escritorio\7-Tipo-DateTime-Escritorio.csproj", "{AC4546D7-AA07-46FC-ACB1-D74B318872CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{974CEF36-7863-41D5-834A-CD845E450346}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{974CEF36-7863-41D5-834A-CD845E450346}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{974CEF36-7863-41D5-834A-CD845E450346}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{974CEF36-7863-41D5-834A-CD845E450346}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC4546D7-AA07-46FC-ACB1-D74B318872CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC4546D7-AA07-46FC-ACB1-D74B318872CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC4546D7-AA07-46FC-ACB1-D74B318872CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC4546D7-AA07-46FC-ACB1-D74B318872CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E1250222-6E73-4672-BCB6-297DC039B683}
+	EndGlobalSection
+EndGlobal
