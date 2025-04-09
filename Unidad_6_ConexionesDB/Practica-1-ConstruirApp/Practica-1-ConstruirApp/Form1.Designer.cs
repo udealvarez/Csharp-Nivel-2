@@ -49,6 +49,7 @@ namespace Practica_1_ConstruirApp
             this.pbDiscos.Location = new System.Drawing.Point(794, 95);
             this.pbDiscos.Name = "pbDiscos";
             this.pbDiscos.Size = new System.Drawing.Size(307, 255);
+            this.pbDiscos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbDiscos.TabIndex = 1;
             this.pbDiscos.TabStop = false;
             // 
