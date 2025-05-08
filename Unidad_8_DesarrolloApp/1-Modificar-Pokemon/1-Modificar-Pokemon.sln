@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34729.46
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms-App", "WinForms-App\WinForms-App.csproj", "{7888C84E-D6AD-452B-B795-19EB2BC042AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.csproj", "{3F53AE66-F9E3-4977-924A-E6BCB7203632}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "Negocio\Negocio.csproj", "{7555D03A-DC16-482C-A239-C2F65D38A180}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7888C84E-D6AD-452B-B795-19EB2BC042AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7888C84E-D6AD-452B-B795-19EB2BC042AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7888C84E-D6AD-452B-B795-19EB2BC042AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7888C84E-D6AD-452B-B795-19EB2BC042AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F53AE66-F9E3-4977-924A-E6BCB7203632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F53AE66-F9E3-4977-924A-E6BCB7203632}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F53AE66-F9E3-4977-924A-E6BCB7203632}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F53AE66-F9E3-4977-924A-E6BCB7203632}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7555D03A-DC16-482C-A239-C2F65D38A180}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7555D03A-DC16-482C-A239-C2F65D38A180}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7555D03A-DC16-482C-A239-C2F65D38A180}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7555D03A-DC16-482C-A239-C2F65D38A180}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {42810BC2-734D-43A9-9361-2A4091DCA479}
+	EndGlobalSection
+EndGlobal

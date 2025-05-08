@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34729.46
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsApp", "WinFormsApp\WinFormsApp.csproj", "{F66F7240-91F2-4FD9-BE45-988693EBC48E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "Negocio\Negocio.csproj", "{9DB5CEBB-A6ED-4232-80ED-6FECCD0B731E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.csproj", "{89C74FCA-355C-47CC-9140-7CD5F8DE3EA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F66F7240-91F2-4FD9-BE45-988693EBC48E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F66F7240-91F2-4FD9-BE45-988693EBC48E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F66F7240-91F2-4FD9-BE45-988693EBC48E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F66F7240-91F2-4FD9-BE45-988693EBC48E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DB5CEBB-A6ED-4232-80ED-6FECCD0B731E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DB5CEBB-A6ED-4232-80ED-6FECCD0B731E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DB5CEBB-A6ED-4232-80ED-6FECCD0B731E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DB5CEBB-A6ED-4232-80ED-6FECCD0B731E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89C74FCA-355C-47CC-9140-7CD5F8DE3EA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89C74FCA-355C-47CC-9140-7CD5F8DE3EA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89C74FCA-355C-47CC-9140-7CD5F8DE3EA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89C74FCA-355C-47CC-9140-7CD5F8DE3EA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C8D8940B-262B-436A-ACF0-46EC8F5C83F7}
+	EndGlobalSection
+EndGlobal
