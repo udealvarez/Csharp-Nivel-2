@@ -33,8 +33,7 @@ namespace Presentacion
             this.pbArticulo = new System.Windows.Forms.PictureBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
-            this.btnEliminarFisico = new System.Windows.Forms.Button();
-            this.btnEliminacionLogico = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.lblFiltro = new System.Windows.Forms.Label();
             this.txtFiltro = new System.Windows.Forms.TextBox();
             this.btnFiltro = new System.Windows.Forms.Button();
@@ -87,24 +86,17 @@ namespace Presentacion
             this.btnModificar.TabIndex = 3;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
-            // btnEliminarFisico
+            // btnEliminar
             // 
-            this.btnEliminarFisico.Location = new System.Drawing.Point(483, 363);
-            this.btnEliminarFisico.Name = "btnEliminarFisico";
-            this.btnEliminarFisico.Size = new System.Drawing.Size(172, 38);
-            this.btnEliminarFisico.TabIndex = 4;
-            this.btnEliminarFisico.Text = "Eliminar Fisico";
-            this.btnEliminarFisico.UseVisualStyleBackColor = true;
-            // 
-            // btnEliminacionLogico
-            // 
-            this.btnEliminacionLogico.Location = new System.Drawing.Point(712, 363);
-            this.btnEliminacionLogico.Name = "btnEliminacionLogico";
-            this.btnEliminacionLogico.Size = new System.Drawing.Size(172, 38);
-            this.btnEliminacionLogico.TabIndex = 5;
-            this.btnEliminacionLogico.Text = "Eliminar Logico";
-            this.btnEliminacionLogico.UseVisualStyleBackColor = true;
+            this.btnEliminar.Location = new System.Drawing.Point(483, 363);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(172, 38);
+            this.btnEliminar.TabIndex = 4;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // lblFiltro
             // 
@@ -198,8 +190,7 @@ namespace Presentacion
             this.Controls.Add(this.btnFiltro);
             this.Controls.Add(this.txtFiltro);
             this.Controls.Add(this.lblFiltro);
-            this.Controls.Add(this.btnEliminacionLogico);
-            this.Controls.Add(this.btnEliminarFisico);
+            this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.pbArticulo);
@@ -221,8 +212,7 @@ namespace Presentacion
         private System.Windows.Forms.PictureBox pbArticulo;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnModificar;
-        private System.Windows.Forms.Button btnEliminarFisico;
-        private System.Windows.Forms.Button btnEliminacionLogico;
+        private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Label lblFiltro;
         private System.Windows.Forms.TextBox txtFiltro;
         private System.Windows.Forms.Button btnFiltro;

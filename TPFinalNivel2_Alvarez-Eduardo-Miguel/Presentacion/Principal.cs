@@ -97,5 +97,43 @@ namespace Presentacion
                 cbCriterio.Items.Add("Igual a");
             }
         }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            Articulo articuloSeleccionado;
+            articuloSeleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+
+            ABMC_Articulo modificar = new ABMC_Articulo(articuloSeleccionado);
+            modificar.ShowDialog();
+            cargar();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            ArticuloNegocio negocio = new ArticuloNegocio();
+            Articulo articuloSeleccionado;
+
+            try
+            {
+                DialogResult respuesta = MessageBox.Show("De verdad queres eliminarlo?", "Atencion", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (respuesta == DialogResult.Yes)
+                {
+                    articuloSeleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                                       
+                    negocio.eliminar(articuloSeleccionado.Id);
+                    
+                    cargar(); 
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+
+        }
+
+        
     }
 }
