@@ -1,4 +1,5 @@
 ﻿using Dominio;
+using Negocio;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -86,6 +87,102 @@ namespace Negocio
             {
                 datos.cerrarConexion();
             }
+        }
+
+        public List<Articulo> filtrar(string campo, string criterio, string filtro)
+        {
+            List<Articulo> lista = new List<Articulo>();
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                string consulta = "Select A.Id, Codigo, Nombre, A.Descripcion as Tipo, IdMarca, IdCategoria, ImagenUrl, Precio, C.Descripcion as Categorias, M.Descripcion as Marcas from ARTICULOS A, CATEGORIAS C, MARCAS M where C.Id = A.IdCategoria AND M.Id = A.IdMarca AND ";
+                
+                if (campo == "Categoria")
+                {
+                    switch (criterio)
+                    {
+                        case "Comienza con":
+                            consulta += "C.Descripcion like '" + filtro + "%' ";
+                            break;
+                        case "Termina con":
+                            consulta += "C.Descripcion like '%" + filtro + "'";
+                            break;
+                        default:
+                            consulta += "C.Descripcion like '%" + filtro + "%'";
+                            break;
+                    }
+                }
+                else if (campo == "Marca")
+                {
+                    switch (criterio)
+                    {
+                        case "Comienza con":
+                            consulta += "M.Descripcion like '" + filtro + "%' ";
+                            break;
+                        case "Termina con":
+                            consulta += "M.Descripcion like '%" + filtro + "'";
+                            break;
+                        default:
+                            consulta += "M.Descripcion like '%" + filtro + "%'";
+                            break;
+                    }
+                }
+
+                else
+                {
+                    switch (criterio)
+                    {
+                        case "Mayor a":
+                            consulta += "Precio > " + filtro;
+                            break;
+                        case "Menor a":
+                            consulta += "Precio < " + filtro;
+                            break;
+                        default:
+                            consulta += "Precio = " + filtro;
+                            break;
+                    }
+                }
+
+                datos.setearConsulta(consulta);
+                datos.ejecutarLectura();
+
+                while (datos.Lector.Read())
+                {
+                    Articulo aux = new Articulo();
+                    aux.Id = (int)datos.Lector["Aidi"];
+                    aux.CodArticulo = (string)datos.Lector["Codigo"];
+                    aux.Nombre = (string)datos.Lector["Nombre"];
+                    aux.Descripcion = (string)datos.Lector["Articulo"];
+                    aux.Marca = (int)datos.Lector["IdMarca"];
+                    aux.Categoria = (int)datos.Lector["IdCategoria"];
+
+                    if (!(datos.Lector["ImagenUrl"] is DBNull))
+                    {
+                        aux.ImagenUrl = (string)datos.Lector["ImagenUrl"];
+                    }
+
+                    aux.Precio = (decimal)datos.Lector["Precio"];
+                    aux.Categorias = new Elemento();
+                    aux.Categorias.Descripcion = (string)datos.Lector["Categorias"];
+                    aux.Marcas = new Elemento();
+                    aux.Marcas.Descripcion = (string)datos.Lector["Marcas"];
+
+                    lista.Add(aux);
+                }
+
+                return lista;
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+
+
+
         }
     }
 }
