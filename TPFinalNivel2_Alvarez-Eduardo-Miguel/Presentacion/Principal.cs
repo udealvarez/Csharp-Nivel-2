@@ -215,5 +215,15 @@ namespace Presentacion
             dgvArticulos.DataSource = listaFiltrada;
             ocultarColumnas();
         }
+
+        private void btnDetalle_Click(object sender, EventArgs e)
+        {
+            Articulo seleccionado;
+            seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+
+            Detalle mostrar = new Detalle(seleccionado);
+            mostrar.ShowDialog();
+            cargar();
+        }
     }
 }

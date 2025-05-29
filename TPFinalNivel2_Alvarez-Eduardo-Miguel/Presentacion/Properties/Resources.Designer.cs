@@ -113,6 +113,16 @@ namespace Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_cerrar_ventana_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-cerrar-ventana-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_eliminar_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-eliminar-32", resourceCulture);
