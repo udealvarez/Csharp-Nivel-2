@@ -54,7 +54,7 @@ namespace Presentacion
             this.dgvArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvArticulos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvArticulos.Location = new System.Drawing.Point(49, 109);
-            this.dgvArticulos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvArticulos.Margin = new System.Windows.Forms.Padding(4);
             this.dgvArticulos.MultiSelect = false;
             this.dgvArticulos.Name = "dgvArticulos";
             this.dgvArticulos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -76,7 +76,7 @@ namespace Presentacion
             // txtFiltro
             // 
             this.txtFiltro.Location = new System.Drawing.Point(277, 49);
-            this.txtFiltro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFiltro.Margin = new System.Windows.Forms.Padding(4);
             this.txtFiltro.Name = "txtFiltro";
             this.txtFiltro.Size = new System.Drawing.Size(183, 21);
             this.txtFiltro.TabIndex = 7;
@@ -97,7 +97,7 @@ namespace Presentacion
             this.cbCampo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCampo.FormattingEnabled = true;
             this.cbCampo.Location = new System.Drawing.Point(144, 499);
-            this.cbCampo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbCampo.Margin = new System.Windows.Forms.Padding(4);
             this.cbCampo.Name = "cbCampo";
             this.cbCampo.Size = new System.Drawing.Size(140, 23);
             this.cbCampo.TabIndex = 10;
@@ -119,7 +119,7 @@ namespace Presentacion
             this.cbCriterio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCriterio.FormattingEnabled = true;
             this.cbCriterio.Location = new System.Drawing.Point(535, 497);
-            this.cbCriterio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbCriterio.Margin = new System.Windows.Forms.Padding(4);
             this.cbCriterio.Name = "cbCriterio";
             this.cbCriterio.Size = new System.Drawing.Size(140, 23);
             this.cbCriterio.TabIndex = 12;
@@ -138,10 +138,11 @@ namespace Presentacion
             // txtFiltroAvanzado
             // 
             this.txtFiltroAvanzado.Location = new System.Drawing.Point(943, 496);
-            this.txtFiltroAvanzado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFiltroAvanzado.Margin = new System.Windows.Forms.Padding(4);
             this.txtFiltroAvanzado.Name = "txtFiltroAvanzado";
             this.txtFiltroAvanzado.Size = new System.Drawing.Size(140, 21);
             this.txtFiltroAvanzado.TabIndex = 14;
+            this.txtFiltroAvanzado.TextChanged += new System.EventHandler(this.txtFiltroAvanzado_TextChanged);
             // 
             // btnDetalle
             // 
@@ -151,7 +152,7 @@ namespace Presentacion
             this.btnDetalle.Image = global::Presentacion.Properties.Resources.icons8_ver_archivo_32;
             this.btnDetalle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDetalle.Location = new System.Drawing.Point(885, 419);
-            this.btnDetalle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDetalle.Margin = new System.Windows.Forms.Padding(4);
             this.btnDetalle.Name = "btnDetalle";
             this.btnDetalle.Size = new System.Drawing.Size(200, 44);
             this.btnDetalle.TabIndex = 15;
@@ -165,7 +166,7 @@ namespace Presentacion
             this.btnFiltro.Image = global::Presentacion.Properties.Resources.icons8_buscar_32;
             this.btnFiltro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFiltro.Location = new System.Drawing.Point(495, 34);
-            this.btnFiltro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFiltro.Margin = new System.Windows.Forms.Padding(4);
             this.btnFiltro.Name = "btnFiltro";
             this.btnFiltro.Size = new System.Drawing.Size(200, 44);
             this.btnFiltro.TabIndex = 8;
@@ -181,7 +182,7 @@ namespace Presentacion
             this.btnEliminar.Image = global::Presentacion.Properties.Resources.icons8_eliminar_32;
             this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEliminar.Location = new System.Drawing.Point(602, 419);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(200, 44);
             this.btnEliminar.TabIndex = 4;
@@ -196,7 +197,7 @@ namespace Presentacion
             this.btnModificar.Image = global::Presentacion.Properties.Resources.icons8_modificar_32;
             this.btnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnModificar.Location = new System.Drawing.Point(330, 419);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(4);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(200, 44);
             this.btnModificar.TabIndex = 3;
@@ -212,7 +213,7 @@ namespace Presentacion
             this.btnAgregar.Image = global::Presentacion.Properties.Resources.icons8_añadir_32;
             this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAgregar.Location = new System.Drawing.Point(49, 419);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(200, 44);
             this.btnAgregar.TabIndex = 2;
@@ -223,7 +224,7 @@ namespace Presentacion
             // pbArticulo
             // 
             this.pbArticulo.Location = new System.Drawing.Point(759, 109);
-            this.pbArticulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbArticulo.Margin = new System.Windows.Forms.Padding(4);
             this.pbArticulo.Name = "pbArticulo";
             this.pbArticulo.Size = new System.Drawing.Size(326, 277);
             this.pbArticulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -253,7 +254,7 @@ namespace Presentacion
             this.Controls.Add(this.dgvArticulos);
             this.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bienvenidos a Market Overflow ";

@@ -160,7 +160,60 @@ namespace Presentacion
 
         private bool validarFiltro()
         {
-            throw new NotImplementedException();
+            if (cbCampo.SelectedIndex < 0)
+            {
+                MessageBox.Show("Por favor seleccione el campo para filtrar");
+                return true;
+            }
+            if (cbCriterio.SelectedIndex < 0)
+            {
+                MessageBox.Show("Por favor seleccione el criterio para filtrar");
+                return true;
+            }
+            if (cbCampo.SelectedItem.ToString() == "Precio")
+            {
+                if (string.IsNullOrEmpty(txtFiltro.Text))
+                {
+                    MessageBox.Show("Debes cargar el filtro para numéricos");
+                    return true;
+                }
+                if (!(soloNumeros(txtFiltro.Text)))
+                {
+                    MessageBox.Show("Solo nros para filtrar por un campo numérico");
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private bool soloNumeros(string cadena)
+        {
+            foreach (char caracter in cadena)
+            {
+                if (!(char.IsNumber(caracter)))
+                    return false;
+            }
+
+            return true;
+        }
+
+        private void txtFiltroAvanzado_TextChanged(object sender, EventArgs e)
+        {
+            List<Articulo> listaFiltrada;
+            string filtro = txtFiltro.Text;
+
+            if (filtro.Length >= 3)
+            {
+                listaFiltrada = listaArticulos.FindAll(x => x.Nombre.ToUpper().Contains(filtro.ToUpper()) || x.Marcas.Descripcion.ToUpper().Contains(filtro.ToUpper()) || x.Categorias.Descripcion.ToUpper().Contains(filtro.ToUpper())); 
+            }
+            else
+            {
+                listaFiltrada = listaArticulos;
+            }
+
+            dgvArticulos.DataSource = null;
+            dgvArticulos.DataSource = listaFiltrada;
+            ocultarColumnas();
         }
     }
 }
