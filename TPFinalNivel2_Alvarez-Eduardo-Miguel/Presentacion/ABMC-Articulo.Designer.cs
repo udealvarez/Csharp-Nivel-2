@@ -115,6 +115,7 @@ namespace Presentacion
             this.txtImagen.Name = "txtImagen";
             this.txtImagen.Size = new System.Drawing.Size(125, 20);
             this.txtImagen.TabIndex = 3;
+            this.txtImagen.Leave += new System.EventHandler(this.txtImagen_Leave);
             // 
             // cbMarca
             // 
@@ -140,6 +141,7 @@ namespace Presentacion
             this.btnImagen.Size = new System.Drawing.Size(48, 41);
             this.btnImagen.TabIndex = 4;
             this.btnImagen.UseVisualStyleBackColor = true;
+            this.btnImagen.Click += new System.EventHandler(this.btnImagen_Click);
             // 
             // btnAceptar
             // 
@@ -149,6 +151,7 @@ namespace Presentacion
             this.btnAceptar.TabIndex = 8;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnCancelar
             // 
@@ -201,6 +204,7 @@ namespace Presentacion
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(125, 20);
             this.txtPrecio.TabIndex = 2;
+            this.txtPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecio_KeyPress);
             // 
             // ABMC_Articulo
             // 
