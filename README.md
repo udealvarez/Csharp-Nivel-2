@@ -62,6 +62,35 @@ comenzamos a pensar como desarrolladores de aplicaciones reales, entendiendo có
 
 ---
 
+## 🛠️ Tecnologías Utilizadas
+- Visual Studio 2019
+- SQL Server
+
+---
+
+## 📂 Archivos adicionales
+Este repositorio incluye un **Trabajo Práctico Final** que consolida todos los conocimientos adquiridos a lo largo del curso.
+
+El proyecto se encuentra estructurado en capas:
+- `Dominio` para entidades.
+- `Negocio` para la lógica de negocios.
+- `Presentación` como capa de interfaz gráfica utilizando **Windows Forms**.
+
+También se incluye un archivo de respaldo de base de datos: `CATALOGO_DB.bak`, listo para restaurar en **SQL Server**.
+
+Proyecto desarrollado completamente en **Visual Studio 2019**.
+
+---
+
+## 🧪 Características del TP Final
+- ABMC completo (Alta, Baja, Modificación, Consulta) sobre artículos.
+- Interfaz amigable con múltiples formularios conectados.
+- Uso de íconos e imágenes en el frontend.
+- Separación clara de responsabilidades.
+- Conexión segura y eficiente a base de datos.
+
+---
+
 ## 📎 Recursos útiles
 
 - Documentación oficial de C#: [docs.microsoft.com](https://learn.microsoft.com/es-es/dotnet/csharp/)
