@@ -23,7 +23,7 @@ namespace Presentacion
         public ABMC_Articulo()
         {
             InitializeComponent();
-            Text = "Agregar articulo";
+            Text = "Alta de articulo";
         }
 
         public ABMC_Articulo(Articulo articulo)
